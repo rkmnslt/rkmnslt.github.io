@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" type="text/css" href="Contacts.css">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script type="text/javascript" src="Contacts.js"></script>
+</head>
+<body>
+
+<div id="video">
+    <img id="background_picture" src="b6.png">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+</div>
+<div class="background">
+    <div class="main">
+        <div id="buttons_grid">
+            <div id="buttons">
+                <a class="button" href="Welcome.html">Welcome</a>
+                <a class="button" href="Multimedia.html">Multimedia</a>
+                <a class="button" href="About.html">About</a>
+                <a class="button" href="Contacts.html">Contacts</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div id="text" class="content">
+        <p>Get in touch with us! </p>
+        <div class="text">
+            <div id="links">
+                <div><a href="mailto:rkmnslt@gmail.com"><img class="symbols" id="gmail" src="gmail.png"
+                                                             style="width: 50px"></a></div>
+                <div><a href="https://www.instagram.com/vitaliy_sus/"><img class="symbols" id="instagram"
+                                                                           src="instagram.png" style="width: 50px"></a>
+                </div>
+                <div><a href="https://www.facebook.com/rkmnslt?ref=bookmarks"><img class="symbols" id="facebook"
+                                                                                   src="facebook.png"
+                                                                                   style="width: 50px"></a></div>
+                <div><a href="https://vk.com/skybikes_extremebiketrialshow"><img class="symbols" id="vk" src="vk.svg"
+                                                                                 style="width: 50px"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="forms" class="content">
+        <p style="font-size: 20px">Limited in time? Give us your name and e-mail or phone number and we will contact
+            you!</p>
+        <p>
+            Name<br/> <input type="text" class="inputs" id="name" size="56" onblur="return checkName(this.value);"/>
+        </p>
+        <p>
+            E-mail<br/> <input type="text" class="inputs" id="e-mail" size="56"
+                               onblur="return checkEmail(this.value);"/>
+        </p>
+        <p> Phone<br/> <input type="text" class="inputs" id="phone" size="56" maxlength="12"
+                              onblur="return checkNumber(this.value);"/>
+        </p>
+        <button class="button" onclick="showAlert()">Submit</button>
+    </div>
+</div>
+</body>
+</html>

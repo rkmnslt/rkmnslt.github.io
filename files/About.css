@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+}
+
+.background {
+    width: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    top: 0px;
+}
+
+.main {
+    display: grid;
+}
+
+.about {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-column-gap: 3em;
+    padding: 2%;
+    margin: 0.5%;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    font-family: "Acuminpro regular", sans-serif;
+}
+
+#background_picture {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+#links{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-gap: 0.1em;
+}
+
+.symbols{
+    border: 1px solid black;
+}
+
+.symbols:hover{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.text{
+    position: inherit;
+    background-color:black;
+    opacity: 0.9;
+    padding: 1.5%;
+    border: 9px solid rgba(140, 26, 26, 0.5);
+}
+
+#footer{
+    color: darkgrey;
+    margin-left: 77%;
+    position: relative;
+}
